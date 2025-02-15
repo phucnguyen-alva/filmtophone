@@ -1,50 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #ff0000;
+    --background-color: #f9f9f9;
+    --font-main: "Inter", sans-serif;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
+    font-family: var(--font-main);
+    background: var(--background-color);
+    color: var(--primary-color);
     text-align: center;
-}
-
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    list-style-type: none;
+
+header {
+    padding: 10px 20px; /* Reduced padding */
+    text-align: left;
+}
+
+header h1 {
+    font-size: 1rem; /* Smaller font size for "Polaroid Cloud" */
+    font-weight: 800; /* Make it lighter */
     margin: 0;
 }
 
-nav ul li a {
-    display: inline-block;
+.hero {
+    padding: 30px 20px;
+    margin-top: -40px;
+}
+
+.hero h2 {
+    font-size: 3.5rem; /* Large text size */
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 5px; /* Reduced space between text and image */
+}
+
+.hero img {
+    width: 80%; /* Adjust image width relative to text */
+    max-width: 400px; /* Set a max-width */
+    height: auto;
+    margin-top: -55px; /* Reduce space further */
+}
+
+.details {
     padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+    text-align: center;
+    margin-top: -120px;
 }
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+h3 {
+    font-weight: 900;
+    font-size: 1.7rem;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.details p {
+    text-align: justify;
+    max-width: 600px; /* Limits width to keep it readable */
+    margin: 0 auto; /* Centers the justified text */
 }
 
-img.about {
-    opacity: 0.5;
+.details ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px; /* Limits width to keep it readable */
+    margin: 0 auto; /* Centers the justified text */
+}
+
+.details li {
+    padding: 10px 0;
+}
+
+.details li i {
+    font-size: 1.2rem; /* Adjust icon size */
+    color: var(--primary-color); /* Ensure color consistency */
+}
+.cta {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta h3 {
+    font-weight: 900;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.cta-container {
+    background: #eaeaea; /* Light gray background */
+    border-radius: 15px; /* Rounded edges */
+    padding: 10px; /* Inner spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px; /* Set a width */
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 40px;
+}
+
+.cta-container input[type="text"] {
+    flex: 1; /* Expand input field */
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    background: white;
+    margin: 0 10px; /* Add spacing inside */
+}
+
+.cta-container button {
+    background: var(--secondary-color); /* Red button */
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
 }
